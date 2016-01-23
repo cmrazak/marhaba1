@@ -30,28 +30,38 @@ body {
 .page {
 	min-height: 100%;
 	position: relative;
+	
 }
 
 .header {
 	padding: 10px;
 	width: 100%;
-	text-align: center;
+	text-align: center;border-style:none;
+border-bottom:1px solid silver;
 }
 
 .content {
 	padding: 10px;
 	padding-bottom: 20px; /* Height of the footer element */
 	overflow: hidden;
+	min-height:400px
+	
 }
 
 .menu {
 	padding: 50px 10px 0px 10px;
 	width: 200px;
 	float: left;
+	border: 1px solid maroon;
+	
+	
 }
 
 .body {
-	margin: 50px 10px 0px 250px;
+	margin: 0px 0px 0px 250px;
+	border-left: 1px solid silver;
+	min-height:400px
+
 }
 
 .footer {
@@ -62,13 +72,14 @@ body {
 	text-align: center;
 	width: 100%;
 	height: 20px;
+	border-top: 1px solid silver;
 }
 </style>
 </head>
 <body>
 	<div class="page">
 		<tiles:insertAttribute name="header" />
-		<div class="content">
+		<div class="content" style="border-color: red;">
 			<tiles:insertAttribute name="menu" />
 			<tiles:insertAttribute name="body" />
 		</div>

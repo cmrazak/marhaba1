@@ -17,4 +17,23 @@ function initMenu() {
 $(document).ready(function() {
 	// alert("Hi");
 	initMenu();
+	$("#name1").focus(function(){
+		//alert("HI");
+		if (this.value == "type the name of employee to search")
+		{
+		    this.value = "";
+		    $(this).css('color','#000000');
+		 }
+		});
+
+		$("#name1").blur(function(){
+
+		        if (this.value == "")
+		        {
+		            this.value = "type the name of employee to search";
+		            $(this).css('color','#a9a9a9');
+		        }
+		    });
 });
+
+;

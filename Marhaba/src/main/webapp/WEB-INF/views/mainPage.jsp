@@ -8,7 +8,7 @@
 			<h1>Home page !</h1>
 			<p align="right">Welcome! ${loggedInUser.firstName}</p>
 
-			<p>The time on the server is ${serverTime}.</p>
+			
 		</div>
 	</tiles:putAttribute>
 </tiles:insertDefinition>

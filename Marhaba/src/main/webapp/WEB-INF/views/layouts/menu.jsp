@@ -1,9 +1,9 @@
 
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var="contextPath" value="${pageContext.request.contextPath}"/>
 
-
-<div>
+<div class="menu">
 	<ul id="menu1">
 		<li><a href="">Requirement</a>
 			<ul>
@@ -18,7 +18,7 @@
 			<ul>
 			</ul></li>
 		<li><a class="1">Customer</a>
-			<ul><li> <a href="<c:url value="customer/new"/>"> New</a></li>
+			<ul><li> <a href="${contextPath}/customer/new"> New</a></li>
 			</ul></li>
 	</ul>
 </div>
