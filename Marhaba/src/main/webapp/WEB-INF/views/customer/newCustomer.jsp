@@ -5,27 +5,25 @@
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
 <head>
 <script type="text/javascript">
-$(document).ready(function() {
-	// alert("Hi");
-	
-	$("#name1").focus(function(){
-		//alert("HI");
-		if (this.value == "type the name of employee to search")
-		{
-		    this.value = "";
-		    $(this).css('color','#000000');
-		 }
+	$(document).ready(function() {
+		// alert("Hi");
+
+		$("#name1").focus(function() {
+			//alert("HI");
+			if (this.value == "type the name of employee to search") {
+				this.value = "";
+				$(this).css('color', '#000000');
+			}
 		});
 
-		$("#name1").blur(function(){
+		$("#name1").blur(function() {
 
-		        if (this.value == "")
-		        {
-		            this.value = "type the name of employee to search";
-		            $(this).css('color','#a9a9a9');
-		        }
-		    });
-});
+			if (this.value == "") {
+				this.value = "type the name of employee to search";
+				$(this).css('color', '#a9a9a9');
+			}
+		});
+	});
 </script>
 </head>
 <tiles:insertDefinition name="defaultTemplate">
@@ -38,22 +36,26 @@ $(document).ready(function() {
 				<table style="vertical-align: center;">
 					<tr>
 						<td>Customer Name</td>
-						
-						<td><form:input size="45"  path="name" id="name1" 
-						value="${not empty customer.name? customer.name : 'type the name of employee to search'}"    
-						/></td>
+
+						<td><form:input size="45" path="name" id="name" /></td>
 					</tr>
 					<tr>
-						<td>Street/Locality</td>
-						<td><form:input path="name" id="name" /></td>
+						<td>Area/Locality</td>
+						<td><form:input path="area" id="area" /></td>
 					</tr>
 					<tr>
-						<td>Address</td>
-						<td><form:input size="30" path="name" id="name" /></td>
+						<td>Region</td>
+						<td><form:select path="region">
+								<form:options items="${regionList}" />
+							</form:select>
+					</tr>
+					<tr>
+						<td>Po Box No</td>
+						<td><form:input size="30" path="poBox" id="po_box" /></td>
 					</tr>
 					<tr>
 						<td>Contact No</td>
-						<td><form:input path="name" id="name" /></td>
+						<td><form:input path="phoneNumber" id="phone_number" /></td>
 					</tr>
 					<tr>
 						<td colspan="2" align="right"><c:choose>

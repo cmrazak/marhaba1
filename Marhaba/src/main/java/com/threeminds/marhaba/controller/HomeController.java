@@ -1,4 +1,4 @@
-package com.threeminds.marhaba;
+package com.threeminds.marhaba.controller;
 
 import java.text.DateFormat;
 import java.util.Date;

@@ -1,12 +1,12 @@
-package com.threeminds.marhaba.service.user;
+package com.threeminds.marhaba.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.threeminds.marhaba.common.Encrypt;
-import com.threeminds.marhaba.dao.user.UserDao;
-import com.threeminds.marhaba.model.user.User;
-import com.threeminds.marhaba.model.user.UserCredential;
+import com.threeminds.marhaba.dao.UserDao;
+import com.threeminds.marhaba.model.User;
+import com.threeminds.marhaba.model.UserCredential;
 
 @Service("userService")
 public class UserServiceImpl implements UserService {

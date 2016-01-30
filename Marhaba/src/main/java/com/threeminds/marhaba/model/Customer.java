@@ -17,21 +17,27 @@ public class Customer {
 	private long id;
 	@Column(name = "name", nullable = false, unique = true)
 	private String name;
-	@Column(name = "street")
-	private String street;
-	@Column(name = "addess")
-	private String address;
-
+	@Column(name = "area")
+	private String area;
+	@Column(name = "region")
+	private String region;
+	@Column(name = "po_box")
+	private String poBox;
+	@Column(name = "phone_number")
+	private String phoneNumber;
+	
 	public Customer() {
 
 	}
 
-	public Customer(long id, String name, String street, String address) {
+	public Customer(long id, String name, String area, String region,String poBox,String phoneNumber ) {
 		
 		this.id = id;
 		this.name = name;
-		this.street = street;
-		this.address = address;
+		this.area = area;
+		this.region = region;
+		this.poBox = poBox;
+		this.phoneNumber = phoneNumber;
 	}
 
 	public long getId() {
@@ -50,20 +56,38 @@ public class Customer {
 		this.name = name;
 	}
 
-	public String getStreet() {
-		return street;
+	public String getArea() {
+		return area;
 	}
 
-	public void setStreet(String street) {
-		this.street = street;
+	public void setArea(String area) {
+		this.area = area;
 	}
 
-	public String getAddress() {
-		return address;
+	public String getRegion() {
+		return region;
 	}
 
-	public void setAddress(String address) {
-		this.address = address;
+	public void setRegion(String region) {
+		this.region = region;
 	}
+
+	public String getPoBox() {
+		return poBox;
+	}
+
+	public void setPoBox(String poBox) {
+		this.poBox = poBox;
+	}
+
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+
+
 
 }

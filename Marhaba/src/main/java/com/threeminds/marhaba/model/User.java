@@ -1,4 +1,4 @@
-package com.threeminds.marhaba.model.user;
+package com.threeminds.marhaba.model;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;

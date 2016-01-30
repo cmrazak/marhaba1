@@ -54,11 +54,12 @@
 		<beans:property name="dataSource" ref="dataSource" />
 		<beans:property name="annotatedClasses">
 			<beans:list>
-				<beans:value>com.threeminds.marhaba.model.user.UserCredential
-				</beans:value>
-				<beans:value>com.threeminds.marhaba.model.user.User</beans:value>
+				<beans:value>com.threeminds.marhaba.model.UserCredential</beans:value>
+				<beans:value>com.threeminds.marhaba.model.User</beans:value>
+				<beans:value>com.threeminds.marhaba.model.Customer</beans:value>
 			</beans:list>
 		</beans:property>
+		
 		<beans:property name="hibernateProperties">
 			<beans:props>
 				<beans:prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect
@@ -66,10 +67,13 @@
 				<beans:prop key="hibernate.show_sql">true</beans:prop>
 			</beans:props>
 		</beans:property>
+		
 	</beans:bean>
-	<beans:bean id="userDao" class="com.threeminds.marhaba.dao.user.UserDaoImpl">
+	
+	<beans:bean id="userDao" class="com.threeminds.marhaba.dao.UserDaoImpl">
 		<beans:property name="sessionFactory" ref="sessionFactory" />
 	</beans:bean>
+	
 	<tx:annotation-driven transaction-manager="transactionManager" />
 
 	<beans:bean id="transactionManager"

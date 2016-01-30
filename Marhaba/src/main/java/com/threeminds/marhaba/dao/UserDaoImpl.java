@@ -1,4 +1,4 @@
-package com.threeminds.marhaba.dao.user;
+package com.threeminds.marhaba.dao;
 
 import java.util.Iterator;
 import java.util.List;
@@ -6,9 +6,8 @@ import java.util.List;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.threeminds.marhaba.dao.AbstractDao;
-import com.threeminds.marhaba.model.user.User;
-import com.threeminds.marhaba.model.user.UserCredential;
+import com.threeminds.marhaba.model.User;
+import com.threeminds.marhaba.model.UserCredential;
 
 @Transactional
 @Repository("userDao")

@@ -1,7 +1,7 @@
-package com.threeminds.marhaba.service.user;
+package com.threeminds.marhaba.service;
 
-import com.threeminds.marhaba.model.user.User;
-import com.threeminds.marhaba.model.user.UserCredential;
+import com.threeminds.marhaba.model.User;
+import com.threeminds.marhaba.model.UserCredential;
 
 public interface UserService {
 

@@ -1,4 +1,6 @@
-package com.threeminds.marhaba;
+package com.threeminds.marhaba.controller;
+
+
 
 import javax.servlet.http.HttpSession;
 
@@ -10,11 +12,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.threeminds.marhaba.model.user.User;
-import com.threeminds.marhaba.service.user.UserService;
+import com.threeminds.marhaba.model.User;
+import com.threeminds.marhaba.service.UserService;
 
 @Controller
 public class LoginController {
+	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	@Autowired
 	UserService userService;

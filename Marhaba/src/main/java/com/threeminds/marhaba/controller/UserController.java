@@ -1,4 +1,4 @@
-package com.threeminds.marhaba.controller.user;
+package com.threeminds.marhaba.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
@@ -8,9 +8,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-
-import com.threeminds.marhaba.model.user.UserCredential;
-import com.threeminds.marhaba.service.user.UserService;
+import com.threeminds.marhaba.model.UserCredential;
+import com.threeminds.marhaba.service.UserService;
 
 @Controller
 @Scope("request")
