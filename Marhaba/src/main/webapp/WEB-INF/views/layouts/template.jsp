@@ -30,22 +30,21 @@ body {
 .page {
 	min-height: 100%;
 	position: relative;
-	
 }
 
 .header {
 	padding: 10px;
 	width: 100%;
-	text-align: center;border-style:none;
-border-bottom:1px solid silver;
+	text-align: center;
+	border-style: none;
+	border-bottom: 1px solid silver;
 }
 
 .content {
 	padding: 10px;
 	padding-bottom: 20px; /* Height of the footer element */
 	overflow: hidden;
-	min-height:400px
-	
+	min-height: 400px
 }
 
 .menu {
@@ -53,15 +52,12 @@ border-bottom:1px solid silver;
 	width: 200px;
 	float: left;
 	border: 1px solid maroon;
-	
-	
 }
 
 .body {
 	margin: 0px 0px 0px 250px;
 	border-left: 1px solid silver;
-	min-height:400px
-
+	min-height: 400px
 }
 
 .footer {
@@ -81,7 +77,10 @@ border-bottom:1px solid silver;
 		<tiles:insertAttribute name="header" />
 		<div class="content" style="border-color: red;">
 			<tiles:insertAttribute name="menu" />
-			<tiles:insertAttribute name="body" />
+			<div>
+				
+				<tiles:insertAttribute name="body" />
+			</div>
 		</div>
 		<tiles:insertAttribute name="footer" />
 	</div>

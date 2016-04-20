@@ -13,11 +13,11 @@ public class Customer {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "id", nullable = false, unique = true)
+	@Column(name = "customer_id", nullable = false, unique = true)
 	private long id;
-	@Column(name = "name", nullable = false, unique = true)
+	@Column(name = "customer_name", nullable = false, unique = true)
 	private String name;
-	@Column(name = "area")
+	@Column(name = "location_area")
 	private String area;
 	@Column(name = "region")
 	private String region;
@@ -87,7 +87,4 @@ public class Customer {
 	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
-
-
-
 }

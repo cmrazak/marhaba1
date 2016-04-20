@@ -36,7 +36,7 @@
 				<a href="${contextPath}/customer/viewall">View All</a>	
 			</div>
 
-			<form:form action="save" method="POST" modelAttribute="customer">
+			<form:form action="edit" method="POST" modelAttribute="customer">
 
 				<form:input type="hidden" path="id" id="id" />
 				<table style="vertical-align: center;">
